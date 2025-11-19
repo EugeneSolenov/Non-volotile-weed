@@ -1,54 +1,154 @@
- <!DOCTYPE html>
- <html lang="ru">
- <head> 
-<meta charset="UTF-8"> 
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avion — Экологичная мебель</title>
+</head>
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Мой сайт</title> 
-<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
- </head> 
-<body> 
-<header> 
-<div> 
-<h1>МойСайт</h1> 
-</div> 
-<nav> 
-<ul> 
-<li><a href="#home">Главная</a></li> 
-<li><a href="#about">О нас</a></li> 
-<li><a href="#services">Услуги</a></li> 
-<li><a href="#contact">Контакты</a></li> 
-</ul> 
-</nav> 
-</header> 
-<main> 
-<section id="home"> 
-<h2>Добро пожаловать!</h2> 
-<p>Это главная страница нашего веб-приложения.</p> 
-</section> 
+<body>
 
- <section id="about"> 
-<h2>О нас</h2> 
-<p>Мы компания, которая занимается созданием качественных веб-решений.
- </p> 
-</section> 
-<section id="services"> 
-<h2>Наши услуги</h2> 
-<ul> 
-<li>Веб-разработка</li> 
-<li>Дизайн</li> 
-<li>Консультации</li> 
-</ul> 
-</section> 
-<section id="contact"> 
-<h2>Контакты</h2> 
-<p>Email: info@example.com</p> 
-<p>Телефон: +7 (123) 456-78-90</p> 
-</section> 
-</main> 
-<footer> 
-<p>&copy; 2025 Сайт. Все права защищены.</p> 
-</footer>
- </body> 
+    <!-- ====================== ШАПКА ====================== -->
+    <header>
+        <img src="Иконки/Search.png">
+        <img src="assets/Лого.png">
+        <img src="Иконки/Shopping--cart.png">
+        <img src="Иконки/User--avatar.png">
+        <nav>
+            <ul>
+                <li><a href="#pots">Горшки для растений</a></li>
+                <li><a href="#cer">Керамика</a></li>
+                <li><a href="#table">Столы</a></li>
+                <li><a href="#chair">Стулья</a></li>
+                <li><a href="#crock">Посуда</a></li>
+                <li><a href="#ware">Столовые принадлежности</a></li>
+                <li><a href="#cut">Столовые приборы</a></li>
+            </ul>
+        </nav>
+    </header>
 
- </html
+    <!-- ====================== HERO-БЛОК ====================== -->
+    <section>
+        <h2>Новая эра — будь экологичным вместе с Avelon</h2>
+        <p>Классический дизайн, который не стареет и опережает время</p>
+
+        <div>
+            <img src="Фото/Right image.png">
+        </div>
+
+        <button type="submit">Смотреть коллекцию</button>
+    </section>
+
+    <!-- ====================== ОСОБЕННОСТИ ====================== -->
+    <section>
+        <h2>Наши преимущества</h2>
+        <ul>
+            <li>
+                <img src="Иконки/Delivery.png">
+                <h3>Доставка уже на следующий день</h3>
+                <p>Сделайте заказ до 15:00 — и получите его уже завтра</p>
+            </li>
+
+            <li>
+                <img src="Иконки/Sprout.png">
+                <h3>Переработанная упаковка</h3>
+                <p>Мы используем 100% переработанные материалы, чтобы уменьшить влияние на природу</p>
+            </li>
+
+            <li>
+                <img src="Иконки/Checkmark--outline.png">
+                <h3>Ручная работа мастеров</h3>
+                <p>Изделия создаются вручную с настоящей страстью и профессионализмом</p>
+            </li>
+
+            <li>
+                <img src="Иконки/Purchase.png">
+                <h3>Цены, которые радуют</h3>
+                <p>Качественные товары по доступной цене</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ====================== ТОВАРЫ ====================== -->
+    <section id="products">
+        <h2>Наши популярные товары</h2>
+        <p>Ручная работа, созданная с любовью и вниманием к деталям</p>
+
+        <article>
+            <div>
+                <img src="Фото/Photo.png">
+            </div>
+
+            <h3>Стул «Dandy»</h3>
+            <p>£250</p>
+        </article>
+
+        <article>
+            <div>
+                <img src="Фото/C.png">
+            </div>
+
+            <h3>Старый стул «Rustic»</h3>
+            <p>£155</p>
+        </article>
+
+        <article>
+            <div>
+                <img src="Фото/Vase.png">
+            </div>
+
+            <h3>Ваза «Silky»</h3>
+            <p>£125</p>
+        </article>
+
+        <article>
+            <div>
+                <img src="Фото/lamp.png">
+            </div>
+
+            <h3>Лампа «Lucy»</h3>
+            <p>£399</p>
+        </article>
+
+        <button type="submit">Смотреть коллекцию</button>
+    </section>
+
+    <!-- ====================== ПОДПИСКА ====================== -->
+    <section>
+        <h3>Присоединяйтесь и получайте преимущества</h3>
+        <p>Подпишитесь на нашу рассылку и получайте эксклюзивные предложения.</p>
+
+        <form>
+            <label>Email:</label>
+            <input type="email" placeholder="you@mail.com">
+            <button type="submit">Подписаться</button>
+        </form>
+
+        <p>От студии в Лондоне — до мирового бренда с более чем 400 магазинами</p>
+    </section>
+
+    <!-- ====================== ФУТЕР ====================== -->
+    <footer>
+        <div>
+            <h4>О компании</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Связаться с нами</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Категории</h4>
+            <ul>
+                <li><a href="#">Посуда</a></li>
+                <li><a href="#">Мебель</a></li>
+                <li><a href="#">Товары для дома</a></li>
+            </ul>
+        </div>
+
+        <p>© 2025 Avion LTD</p>
+    </footer>
+
+</body>
+</html>
