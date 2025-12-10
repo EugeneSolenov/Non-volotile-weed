@@ -11,144 +11,184 @@
 
     <!-- ====================== ШАПКА ====================== -->
     <header>
-        <img src="Иконки/Search.png">
-        <img src="assets/Лого.png">
-        <img src="Иконки/Shopping--cart.png">
-        <img src="Иконки/User--avatar.png">
-        <nav>
-            <ul>
-                <li><a href="#pots">Горшки для растений</a></li>
-                <li><a href="#cer">Керамика</a></li>
-                <li><a href="#table">Столы</a></li>
-                <li><a href="#chair">Стулья</a></li>
-                <li><a href="#crock">Посуда</a></li>
-                <li><a href="#ware">Столовые принадлежности</a></li>
-                <li><a href="#cut">Столовые приборы</a></li>
-            </ul>
-        </nav>
+        <img src="Иконки/Search.png" alt="Поиск">
+        <img src="assets/Лого.png" alt="Логотип Avion">
+        <img src="Иконки/Shopping--cart.png" alt="Корзина">
+        <img src="Иконки/User--avatar.png" alt="Профиль пользователя">
+        <div class="nav">
+            <nav>
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#pots" class="nav_link">Горшки для растений</a></li>
+                    <li class="nav_item"><a href="#cer" class="nav_link">Керамика</a></li>
+                    <li class="nav_item"><a href="#table" class="nav_link">Столы</a></li>
+                    <li class="nav_item"><a href="#chair" class="nav_link">Стулья</a></li>
+                    <li class="nav_item"><a href="#crock" class="nav_link">Посуда</a></li>
+                    <li class="nav_item"><a href="#ware" class="nav_link">Столовые принадлежности</a></li>
+                    <li class="nav_item"><a href="#cut" class="nav_link">Столовые приборы</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- ====================== HERO-БЛОК ====================== -->
     <section>
-        <h2>Новая эра — будь экологичным вместе с Avelon</h2>
-        <p>Классический дизайн, который не стареет и опережает время</p>
+        <h2 class="headline-one">Новая эра — будь экологичным вместе с Avion</h2>
+        <p class="body-large">Классический дизайн, который не стареет и опережает время</p>
 
         <div>
-            <img src="Фото/Right image.png">
+            <img src="Фото/Right image.png" alt="Экологичная мебель">
         </div>
 
-        <button type="submit">Смотреть коллекцию</button>
+        <button type="button">Смотреть коллекцию</button>
     </section>
 
-    <!-- ====================== ОСОБЕННОСТИ ====================== -->
-    <section>
-        <h2>Наши преимущества</h2>
-        <ul>
-            <li>
-                <img src="Иконки/Delivery.png">
-                <h3>Доставка уже на следующий день</h3>
-                <p>Сделайте заказ до 15:00 — и получите его уже завтра</p>
-            </li>
+    <!-- ====================== ОСОБЕННОСТИ (GRID СЕТКА) ====================== -->
+    <section class="content-grid">
+        <h2 class="content-grid_title headline-two">Наши преимущества</h2>
+        <div class="content-grid_container">
+            <article class="content-card">
+                <img src="Иконки/Delivery.png" alt="Доставка">
+                <h3 class="content-card_title headline-four">Доставка уже на следующий день</h3>
+                <p class="content-card_text body-small">Сделайте заказ до 15:00 — и получите его уже завтра</p>
+            </article>
 
-            <li>
-                <img src="Иконки/Sprout.png">
-                <h3>Переработанная упаковка</h3>
-                <p>Мы используем 100% переработанные материалы, чтобы уменьшить влияние на природу</p>
-            </li>
+            <article class="content-card">
+                <img src="Иконки/Sprout.png" alt="Экология">
+                <h3 class="content-card_title headline-four">Переработанная упаковка</h3>
+                <p class="content-card_text body-small">Мы используем 100% переработанные материалы, чтобы уменьшить влияние на природу</p>
+            </article>
 
-            <li>
-                <img src="Иконки/Checkmark--outline.png">
-                <h3>Ручная работа мастеров</h3>
-                <p>Изделия создаются вручную с настоящей страстью и профессионализмом</p>
-            </li>
+            <article class="content-card">
+                <img src="Иконки/Checkmark--outline.png" alt="Качество">
+                <h3 class="content-card_title headline-four">Ручная работа мастеров</h3>
+                <p class="content-card_text body-small">Изделия создаются вручную с настоящей страстью и профессионализмом</p>
+            </article>
 
-            <li>
-                <img src="Иконки/Purchase.png">
-                <h3>Цены, которые радуют</h3>
-                <p>Качественные товары по доступной цене</p>
-            </li>
-        </ul>
+            <article class="content-card">
+                <img src="Иконки/Purchase.png" alt="Цена">
+                <h3 class="content-card_title headline-four">Цены, которые радуют</h3>
+                <p class="content-card_text body-small">Качественные товары по доступной цене</p>
+            </article>
+        </div>
     </section>
 
-    <!-- ====================== ТОВАРЫ ====================== -->
+    <!-- ====================== ТОВАРЫ (GRID СЕТКА) ====================== -->
     <section id="products">
-        <h2>Наши популярные товары</h2>
-        <p>Ручная работа, созданная с любовью и вниманием к деталям</p>
+        <h2 class="headline-two">Наши популярные товары</h2>
+        <p class="body-small">Ручная работа, созданная с любовью и вниманием к деталям</p>
 
-        <article>
-            <div>
-                <img src="Фото/Photo.png">
-            </div>
+        <div class="products-grid">
+            <article class="product-card">
+                <div>
+                    <img src="Фото/Photo.png" alt="Стул Dandy">
+                </div>
+                <h3 class="headline-four">Стул «Dandy»</h3>
+                <p class="body-medium">£250</p>
+            </article>
 
-            <h3>Стул «Dandy»</h3>
-            <p>£250</p>
-        </article>
+            <article class="product-card">
+                <div>
+                    <img src="Фото/C.png" alt="Стул Rustic">
+                </div>
+                <h3 class="headline-four">Старый стул «Rustic»</h3>
+                <p class="body-medium">£155</p>
+            </article>
 
-        <article>
-            <div>
-                <img src="Фото/C.png">
-            </div>
+            <article class="product-card">
+                <div>
+                    <img src="Фото/Vase.png" alt="Ваза Silky">
+                </div>
+                <h3 class="headline-four">Ваза «Silky»</h3>
+                <p class="body-medium">£125</p>
+            </article>
 
-            <h3>Старый стул «Rustic»</h3>
-            <p>£155</p>
-        </article>
+            <article class="product-card">
+                <div>
+                    <img src="Фото/lamp.png" alt="Лампа Lucy">
+                </div>
+                <h3 class="headline-four">Лампа «Lucy»</h3>
+                <p class="body-medium">£399</p>
+            </article>
+        </div>
 
-        <article>
-            <div>
-                <img src="Фото/Vase.png">
-            </div>
+        <button type="button">Смотреть коллекцию</button>
+    </section>
 
-            <h3>Ваза «Silky»</h3>
-            <p>£125</p>
-        </article>
-
-        <article>
-            <div>
-                <img src="Фото/lamp.png">
-            </div>
-
-            <h3>Лампа «Lucy»</h3>
-            <p>£399</p>
-        </article>
-
-        <button type="submit">Смотреть коллекцию</button>
+    <!-- ====================== MASONRY РАСКЛАДКА ====================== -->
+    <section class="masonry-section">
+        <h2 class="headline-two">Дополнительные материалы</h2>
+        <div class="masonry-container">
+            <article class="masonry-item short">
+                <h3 class="headline-four">Краткий материал</h3>
+                <p class="body-small">Короткое описание наших экологичных материалов.</p>
+            </article>
+            <article class="masonry-item tall">
+                <h3 class="headline-four">Подробный материал</h3>
+                <p class="body-small">Развёрнутое описание с дополнительной информацией о производстве экологичной мебели и деталями реализации наших стандартов качества.</p>
+            </article>
+            <article class="masonry-item">
+                <h3 class="headline-four">Стандартный материал</h3>
+                <p class="body-small">Обычное описание материала средней длины. Рассказываем о преимуществах нашей экологичной упаковки.</p>
+            </article>
+            <article class="masonry-item very-tall">
+                <h3 class="headline-four">Обширный материал</h3>
+                <p class="body-small">Полное описание со всеми техническими характеристиками, особенностями применения и рекомендациями по использованию в различных условиях. Подробный гид по уходу за экологичной мебелью и её преимуществах для здоровья и окружающей среды.</p>
+            </article>
+            <article class="masonry-item short">
+                <h3 class="headline-four">Новинки</h3>
+                <p class="body-small">Краткий обзор новых поступлений в коллекции.</p>
+            </article>
+            <article class="masonry-item tall">
+                <h3 class="headline-four">Интервью с дизайнером</h3>
+                <p class="body-small">Разговор с нашим ведущим дизайнером о вдохновении, экологичных материалах и тенденциях в дизайне мебели.</p>
+            </article>
+        </div>
     </section>
 
     <!-- ====================== ПОДПИСКА ====================== -->
-    <section>
-        <h3>Присоединяйтесь и получайте преимущества</h3>
-        <p>Подпишитесь на нашу рассылку и получайте эксклюзивные предложения.</p>
+    <section class="subscription-section">
+        <h3 class="headline-three">Присоединяйтесь и получайте преимущества</h3>
+        <p class="body-medium">Подпишитесь на нашу рассылку и получайте эксклюзивные предложения.</p>
 
-        <form>
-            <label>Email:</label>
-            <input type="email" placeholder="you@mail.com">
+        <form class="subscription-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="you@mail.com">
             <button type="submit">Подписаться</button>
         </form>
 
-        <p>От студии в Лондоне — до мирового бренда с более чем 400 магазинами</p>
+        <p class="body-small">От студии в Лондоне — до мирового бренда с более чем 400 магазинами</p>
     </section>
 
     <!-- ====================== ФУТЕР ====================== -->
     <footer>
         <div>
-            <h4>О компании</h4>
+            <h4 class="headline-five">О компании</h4>
             <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">Связаться с нами</a></li>
+                <li><a href="#" class="body-small">О нас</a></li>
+                <li><a href="#" class="body-small">Вакансии</a></li>
+                <li><a href="#" class="body-small">Связаться с нами</a></li>
             </ul>
         </div>
 
         <div>
-            <h4>Категории</h4>
+            <h4 class="headline-five">Категории</h4>
             <ul>
-                <li><a href="#">Посуда</a></li>
-                <li><a href="#">Мебель</a></li>
-                <li><a href="#">Товары для дома</a></li>
+                <li><a href="#" class="body-small">Посуда</a></li>
+                <li><a href="#" class="body-small">Мебель</a></li>
+                <li><a href="#" class="body-small">Товары для дома</a></li>
             </ul>
         </div>
 
-        <p>© 2025 Avion LTD</p>
+        <div>
+            <h4 class="headline-five">Помощь</h4>
+            <ul>
+                <li><a href="#" class="body-small">Доставка и оплата</a></li>
+                <li><a href="#" class="body-small">Возврат и обмен</a></li>
+                <li><a href="#" class="body-small">Гарантия</a></li>
+            </ul>
+        </div>
+
+        <p class="body-small">© 2025 Avion LTD</p>
     </footer>
 
 </body>
